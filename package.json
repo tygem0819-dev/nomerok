@@ -1,0 +1,25 @@
+{
+  "name": "nomerok",
+  "version": "1.0.0",
+  "description": "nomerOK — симулятор госномеров и тачек",
+  "main": "main.js",
+  "author": "nomerOK",
+  "scripts": {
+    "start": "electron .",
+    "dist:win": "electron-builder --win portable --publish never"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.nomerok.game",
+    "productName": "nomerOK",
+    "files": ["main.js", "www/**/*"],
+    "directories": { "output": "dist" },
+    "win": { "target": "portable" }
+  }
+}
